@@ -23,6 +23,7 @@ A data analysis project exploring match statistics from the UEFA Champions Leagu
 The UEFA Champions League is the pinnacle of European club football, featuring top teams from across the continent. This project aims to answer key analytical questions about team performance, possession dominance, and match outcomes using real match data from the 2020–2023 seasons.
 
 **Key Questions:**
+
 1. Which teams scored the most goals at home in 2020–21?
 2. Which team had the majority possession most often in 2021–22?
 3. Which teams won the most duels but still lost their matches in 2022–23?
@@ -39,19 +40,19 @@ Three CSV files are used, each representing a season:
 
 **Schema Overview:**
 
-| Column                     | Description                                   | Type         |
-|----------------------------|-----------------------------------------------|--------------|
-| STAGE                      | Stage of the match                            | VARCHAR(50)  |
-| DATE                       | Match date                                    | DATE         |
-| TEAM_NAME_HOME             | Home team name                                | VARCHAR(50)  |
-| TEAM_NAME_AWAY             | Away team name                                | VARCHAR(50)  |
-| TEAM_HOME_SCORE            | Home team score                               | NUMBER       |
-| TEAM_AWAY_SCORE            | Away team score                               | NUMBER       |
-| POSSESSION_HOME            | Home team possession (%)                      | FLOAT        |
-| POSSESSION_AWAY            | Away team possession (%)                      | FLOAT        |
-| DUELS_WON_HOME             | Duels won by home team                        | NUMBER       |
-| DUELS_WON_AWAY             | Duels won by away team                        | NUMBER       |
-| ...                        | ...                                           | ...          |
+| Column          | Description              | Type        |
+| --------------- | ------------------------ | ----------- |
+| STAGE           | Stage of the match       | VARCHAR(50) |
+| DATE            | Match date               | DATE        |
+| TEAM_NAME_HOME  | Home team name           | VARCHAR(50) |
+| TEAM_NAME_AWAY  | Away team name           | VARCHAR(50) |
+| TEAM_HOME_SCORE | Home team score          | NUMBER      |
+| TEAM_AWAY_SCORE | Away team score          | NUMBER      |
+| POSSESSION_HOME | Home team possession (%) | FLOAT       |
+| POSSESSION_AWAY | Away team possession (%) | FLOAT       |
+| DUELS_WON_HOME  | Duels won by home team   | NUMBER      |
+| DUELS_WON_AWAY  | Duels won by away team   | NUMBER      |
+| ...             | ...                      | ...         |
 
 See the [notebook](notebook.ipynb) for the full schema.
 
@@ -72,25 +73,25 @@ See the [notebook](notebook.ipynb) for the full schema.
 
 ![Top Home Scorers](images/Duel_football.jpg)
 
-| TEAM_NAME_HOME      | TEAM_HOME_SCORE |
-|---------------------|-----------------|
-| PSG                 | 5               |
-| Manchester United   | 5               |
-| Barcelona           | 5               |
+| TEAM_NAME_HOME    | TEAM_HOME_SCORE |
+| ----------------- | --------------- |
+| PSG               | 5               |
+| Manchester United | 5               |
+| Barcelona         | 5               |
 
 ### Example: Team with Most Majority Possession (2021–22)
 
-| TEAM_NAME  | GAME_COUNT |
-|------------|------------|
-| Liverpool  | 9          |
+| TEAM_NAME | GAME_COUNT |
+| --------- | ---------- |
+| Liverpool | 9          |
 
 ### Example: Teams Winning Duels but Losing Matches (2022–23)
 
-| STAGE                      | TEAM_LOST           |
-|----------------------------|---------------------|
-| Group stage: Matchday 1    | Chelsea             |
-| Group stage: Matchday 1    | København           |
-| ...                        | ...                 |
+| STAGE                   | TEAM_LOST |
+| ----------------------- | --------- |
+| Group stage: Matchday 1 | Chelsea   |
+| Group stage: Matchday 1 | København |
+| ...                     | ...       |
 
 ---
 
@@ -98,14 +99,14 @@ See the [notebook](notebook.ipynb) for the full schema.
 
 - **Python 3** (Jupyter Notebook)
 - **SQL** (Snowflake)
-- **Pandas** (data manipulation)
-- **Matplotlib/Seaborn** (visualization)
 - **Markdown** (documentation)
 
 ---
 
 ## Project Structure
+
 **ucl-snowflake-analysis/**
+
 - **data/**
   - uefa_2020.csv
   - uefa_2021.csv
@@ -113,11 +114,12 @@ See the [notebook](notebook.ipynb) for the full schema.
 - **images/**
   - Stadium.jpg
   - Duel_football.jpg
+- **queries/**
+  - TEAM_HOME_WITH_MOST_GOALS.sql
+  - TEAM_WITH_MAJORITY_POSSESSION.sql
+  - TEAM_WON_DUEL_LOST_GAME_STAGE_WISE.sql
 - notebook.ipynb
-- **src/**
-  - │(any Python scripts or SQL files, e.g., queries.sql)
 - README.md
-- requirements.txt
 - .gitignore
 
 ---
@@ -143,5 +145,5 @@ See the [notebook](notebook.ipynb) for the full schema.
 
 For questions or collaboration:
 
-- **Name:** Reynaldo Castillo III
 - **Email:** reynaldoiii.castillo@gmail.com
+- **LinkedIn:** Reynaldo III Castillo | [LinkedIn](https://www.linkedin.com/in/reynaldo-iii-castillo-975120303)
