@@ -14,6 +14,7 @@ A data analysis project exploring match statistics from the UEFA Champions Leagu
 - [Project Structure](#project-structure)
 - [Results and Insights](#results-and-insights)
 - [Future Work](#future-work)
+- [Acknowledgement](#acknowledgement)
 - [Contact Information](#contact-information)
 
 ---
@@ -141,7 +142,7 @@ See the [notebook](notebooks/notebook.ipynb) for the full schema.
 
 ---
 
-## Acknowledgement
+## Acknowledgement 
 
 - Problem statements and/or datasets in this project were sourced from [DataCamp](https://www.datacamp.com/) real-world projects.
 
