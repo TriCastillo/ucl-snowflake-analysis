@@ -141,6 +141,12 @@ See the [notebook](notebook.ipynb) for the full schema.
 
 ---
 
+## Acknowledgement
+
+- Problem statements and/or datasets in this project were sourced from [DataCamp](https://www.datacamp.com/) real-world projects.
+
+---
+
 ## Contact Information
 
 For questions or collaboration:
