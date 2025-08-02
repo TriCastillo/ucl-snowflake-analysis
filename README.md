@@ -54,7 +54,7 @@ Three CSV files are used, each representing a season:
 | DUELS_WON_AWAY  | Duels won by away team   | NUMBER      |
 | ...             | ...                      | ...         |
 
-See the [notebook](notebook.ipynb) for the full schema.
+See the [notebook](notebooks/notebook.ipynb) for the full schema.
 
 ---
 
@@ -118,9 +118,9 @@ See the [notebook](notebook.ipynb) for the full schema.
   - TEAM_HOME_WITH_MOST_GOALS.sql
   - TEAM_WITH_MAJORITY_POSSESSION.sql
   - TEAM_WON_DUEL_LOST_GAME_STAGE_WISE.sql
-- notebook.ipynb
+- **notebooks/**
+  - notebook.ipynb
 - README.md
-- .gitignore
 
 ---
 
